@@ -48,21 +48,59 @@
 
 // title.innerText = "Kavindu";
 
-let userDetails = [];
-function btnSubmitOnAction() {
+// let userDetails = [];
+// function btnSubmitOnAction() {
+//     let txtEmail = document.getElementById("txtEmail").value;
+//     let txtPassword = document.getElementById("txtPassword").value;
+
+//     // console.log(txtEmail);
+//     // console.log(txtPassword);
+    
+//     let user = {
+//         email:txtEmail,
+//         password :txtPassword
+//     }
+
+//     userDetails.push(user);
+//     console.log(userDetails);
+    
+    
+// }
+let customerList=[];
+function addCustomerOnAction() {
+    let txtName = document.getElementById("txtName").value;
+    let txtAddress = document.getElementById("txtAddress").value;
+    let txtAge = document.getElementById("txtAge").value;
     let txtEmail = document.getElementById("txtEmail").value;
-    let txtPassword = document.getElementById("txtPassword").value;
+    let txtSalary = document.getElementById("txtSalary").value;
 
-    // console.log(txtEmail);
-    // console.log(txtPassword);
-    
-    let user = {
-        email:txtEmail,
-        password :txtPassword
+    let customer = {
+        name :txtName,
+        address : txtAddress,
+        age: txtAge,
+        email : txtEmail,
+        salary : txtSalary
     }
+    customerList.push(customer);
+    console.log(customerList);
+    loadTableOnAction();
+}
+function loadTableOnAction(){
+    let tblCustomer = document.getElementById("tblCustomer");
 
-    userDetails.push(user);
-    console.log(userDetails);
-    
-    
+    let body ="";
+    for (let i = 0; i < customerList.length; i++) {
+        
+    body +=`
+            <tr>
+                <td>${customerList[i].name}</td>
+                <td>${customerList[i].address}</td>
+                <td>${customerList[i].age}</td>
+                <td>${customerList[i].email}</td>
+                <td>${customerList[i].salary}</td>
+            </tr>    
+        `
+    }
+    tblCustomer.innerHTML=body;
+
 }

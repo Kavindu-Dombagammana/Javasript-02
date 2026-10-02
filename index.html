@@ -6,12 +6,39 @@
     <title>Title</title>
 </head>
 <body>
-    <h1 id="title">Hello World</h1>
+    <!-- <h1 id="title">Hello World</h1>
 
     <input type="text" placeholder="Enter Your Email" id="txtEmail">
     <input type="text" placeholder="Enter Your Password" id="txtPassword">
-    <input type="button" value="Submit" onclick="btnSubmitOnAction()">
+    <input type="button" value="Submit" onclick="btnSubmitOnAction()"> -->
 
+
+    <h1>Add Customer Form</h1>
+
+    <input type="text" placeholder="Enter Your Name" id="txtName">
+    <input type="text" placeholder="Enter Your Address" id="txtAddress">
+    <input type="text" placeholder="Enter Your Age" id="txtAge">
+    <input type="text" placeholder="Enter Your Email" id="txtEmail">
+    <input type="text" placeholder="Enter Your Salary" id="txtSalary">
+
+    <table border="1" id="tblCustomer">
+        <th>Name</th>
+        <th>Address</th>
+        <th>Age</th>
+        <th>Email</th>
+        <th>Salary</th>
+
+        <tr>
+            <td>Saman</td>
+            <td>Galle</td>
+            <td>25</td>
+            <td>saman@example.com</td>
+            <td>500000</td>
+        </tr>
+
+    </table>
+    <input type="button" value="Add Customer" onclick="addCustomerOnAction()">
+    <input type="button" value="Load Table" onclick="loadTableOnAction()">
     <!--<script> Javascript only typed at the bottom of the body
         //console.log("Hello World!");
         //This is a print statement in JavaScript
