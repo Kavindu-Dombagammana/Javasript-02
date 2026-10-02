@@ -1,38 +1,49 @@
 //Week 02
 
-let studentList = [
-    {
-        name:"Pawan",
-        age:21,
-        location:"Colombo",
-        score:[
-            {
-                subject:"Maths",
-                marks:79
-            },
-            {
-                subject:"Science",
-                marks:58
-            }
-        ]
-    },
-    {
-        name:"Samara",
-        age:19,
-        aggress:"Gampaha",
-        score:[
-            {
-                subject:"Science",
-                marks:33
-            },
-            {
-                subject:"History",
-                marks:20
-            }
-        ]
+// let studentList = [
+//     {
+//         name:"Pawan",
+//         age:21,
+//         location:"Colombo",
+//         score:[
+//             {
+//                 subject:"Maths",
+//                 marks:79
+//             },
+//             {
+//                 subject:"Science",
+//                 marks:58
+//             }
+//         ]
+//     },
+//     {
+//         name:"Samara",
+//         age:19,
+//         aggress:"Gampaha",
+//         score:[
+//             {
+//                 subject:"Science",
+//                 marks:33
+//             },
+//             {
+//                 subject:"History",
+//                 marks:20
+//             }
+//         ]
 
-    }
-]
+//     }
+// ]
 
-console.log(studentList[0].age);
-console.log(studentList[0].score[1].subject);
+// console.log(studentList[0].age);
+// console.log(studentList[0].score[1].subject);
+
+
+// DOM - (Document Object Model)
+//This access the html site
+//console.log(document);
+
+//access the title tag in html
+
+let title = document.getElementById("title");
+
+title.innerText = "Kavindu";
