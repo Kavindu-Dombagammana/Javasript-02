@@ -48,13 +48,21 @@
 
 // title.innerText = "Kavindu";
 
-
+let userDetails = [];
 function btnSubmitOnAction() {
     let txtEmail = document.getElementById("txtEmail").value;
     let txtPassword = document.getElementById("txtPassword").value;
 
-    console.log(txtEmail);
-    console.log(txtPassword);
+    // console.log(txtEmail);
+    // console.log(txtPassword);
+    
+    let user = {
+        email:txtEmail,
+        password :txtPassword
+    }
+
+    userDetails.push(user);
+    console.log(userDetails);
     
     
 }
