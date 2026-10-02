@@ -44,6 +44,17 @@
 
 //access the title tag in html
 
-let title = document.getElementById("title");
+// let title = document.getElementById("title");
 
-title.innerText = "Kavindu";
+// title.innerText = "Kavindu";
+
+
+function btnSubmitOnAction() {
+    let txtEmail = document.getElementById("txtEmail").value;
+    let txtPassword = document.getElementById("txtPassword").value;
+
+    console.log(txtEmail);
+    console.log(txtPassword);
+    
+    
+}
